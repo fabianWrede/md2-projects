@@ -1,0 +1,17 @@
+package androidGeneratorTestProject.views
+
+FlowLayoutPane LocationView ( vertical ) {
+	Label TitleLbl {
+		text "Enter your location"
+	}
+
+	TextInput locationValue {
+		label "Location: "
+		tooltip "Please insert location."
+	}
+
+	Button Next {
+		text "Next"
+		disabled false
+	}
+}

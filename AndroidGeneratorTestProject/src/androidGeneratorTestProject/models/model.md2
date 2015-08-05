@@ -1,0 +1,5 @@
+package androidGeneratorTestProject.models
+
+entity Location {
+	myLocation: string
+}

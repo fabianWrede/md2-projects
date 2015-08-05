@@ -1,0 +1,35 @@
+package androidGeneratorTestProject.controllers
+
+main {
+	appVersion "1.0"
+	modelVersion "1.0"
+	workflowManager workFlowManager
+}
+
+remoteConnection workFlowManager {
+	uri "http://localhost:8080/CurrentStateProject.backend/service/"
+}
+
+contentProvider Location LocationProvider {
+	providerType local
+}
+
+WorkflowElement WFE {
+	defaultProcessChain AppProcessChain
+	onInit {
+		init,
+		buttonInit
+	}
+
+	action CustomAction init {
+		map LocationView.locationValue to :LocationProvider.myLocation
+	}
+
+	action CustomAction buttonInit {
+		bind action FireEvent ( EndEvent ) on LocationView.Next.onClick
+	}
+
+	processChain AppProcessChain {
+		step EnterLocation: view LocationView
+	}
+}

@@ -1,0 +1,13 @@
+package androidGeneratorTestProject.workflows
+
+WorkflowElement WFE
+	fires EndEvent {
+		end workflow
+	}
+
+App FirstApp {
+	WorkflowElements{
+		WFE (startable: "Start Workflow")
+	}
+	appName "This is the first test app"
+}
