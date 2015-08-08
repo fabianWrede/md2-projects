@@ -15,3 +15,19 @@ FlowLayoutPane LocationView ( vertical ) {
 		disabled false
 	}
 }
+
+FlowLayoutPane LocationView2 ( vertical ) {
+	Label TitleLbl2 {
+		text "Enter your location"
+	}
+
+	TextInput locationValue {
+		label "Location: "
+		tooltip "Please insert location."
+	}
+
+	Button Next {
+		text "Nextttt"
+		disabled false
+	}
+}
