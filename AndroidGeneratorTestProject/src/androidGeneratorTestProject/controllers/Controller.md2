@@ -31,5 +31,6 @@ WorkflowElement WFE {
 
 	processChain AppProcessChain {
 		step EnterLocation: view LocationView
+		step VerifyLocation: view VerifyView
 	}
 }

@@ -1,6 +1,6 @@
 package androidGeneratorTestProject.views
 
-FlowLayoutPane LocationView ( vertical ) {
+GridLayoutPane LocationView ( columns 3, rows 4 ) {
 	Label TitleLbl {
 		text "Enter your location"
 	}
@@ -14,4 +14,9 @@ FlowLayoutPane LocationView ( vertical ) {
 		text "Next"
 		disabled false
 	}
+}
+
+
+FlowLayoutPane VerifyView ( horizontal ) {
+
 }
