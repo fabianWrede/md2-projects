@@ -22,11 +22,11 @@ WorkflowElement WFE {
 	}
 
 	action CustomAction init {
-		map LocationView.locationValue to :LocationProvider.myLocation
+		map LocationView.LocationViewGrid.locationValue to :LocationProvider.myLocation
 	}
 
 	action CustomAction buttonInit {
-		bind action FireEvent ( EndEvent ) on LocationView.Next.onClick
+		bind action FireEvent ( EndEvent ) on LocationView.LocationViewGrid.Next.onClick
 	}
 
 	processChain AppProcessChain {

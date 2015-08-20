@@ -1,6 +1,7 @@
 package androidGeneratorTestProject.views
 
-GridLayoutPane LocationView ( columns 3, rows 4 ) {
+AlternativesPane LocationView{
+	GridLayoutPane LocationViewGrid ( columns 3, rows 4 ) {
 	Label TitleLbl {
 		text "Enter your location"
 	}
@@ -16,7 +17,33 @@ GridLayoutPane LocationView ( columns 3, rows 4 ) {
 	}
 }
 
+}
 
 FlowLayoutPane VerifyView ( horizontal ) {
-
+	DateTimeInput Next1 {
+		
+		disabled false
+	}
+	
+	TextInput Next2 {
+		label "halle"
+		tooltip "tooltip"		
+		disabled false
+	}
+	
+	Button Next3 {
+		text "Next"
+		disabled false
+	}
+	
+	Button Next4 {
+		text "Next"
+		disabled false
+	}
+	
+	Button Next5 {
+		text "Next"
+		disabled false
+	}
 }
+
