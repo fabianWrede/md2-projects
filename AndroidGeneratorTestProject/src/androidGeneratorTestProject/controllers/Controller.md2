@@ -21,6 +21,12 @@ WorkflowElement WFE {
 		buttonInit
 	}
 
+	action CombinedAction combAct{
+		buttonInit
+		init
+	}
+
+
 	action CustomAction init {
 		map LocationView.LocationViewGrid.locationValue to :LocationProvider.myLocation
 	}
